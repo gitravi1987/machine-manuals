@@ -52,6 +52,7 @@ Build a structured, AI-assisted workflow to produce **accurate, standards-compli
 | P2 | Karthik Engineering | Tilting Machine | In Progress | High |
 | P3 | Valeo | LE Test Bench | Content Complete | Medium |
 | IndoMIM-Apple-P1 | Indo MIM (Apple) | TBD | Planned | High |
+| P4 | Indo MIM Chennai | TBD | Planned | High |
 
 ---
 
