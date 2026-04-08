@@ -29,6 +29,7 @@
 | P2 | [P2-karthik-engg/](./P2-karthik-engg/) | Karthik Engineering | Tilting Machine | B | In Progress | No |
 | P3 | [P3-valeo/](./P3-valeo/) | Valeo | LE Test Bench | A | Content Complete | No |
 | IndoMIM-Apple-P1 | [IndoMIM-Apple-P1/](./IndoMIM-Apple-P1/) | Indo MIM (Apple) | TBD | TBD | Planned | Yes |
+| P4 | [P4-indo-mim-chennai/](./P4-indo-mim-chennai/) | Indo MIM Chennai | TBD | Planned | No |
 
 ---
 
