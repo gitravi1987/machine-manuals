@@ -1,0 +1,148 @@
+```yaml
+# MASTER YAML TEMPLATE — MACHINE MANUAL PROJECTS
+
+project_info:
+  project_id: PENDING
+  client: PENDING
+  end_user: PENDING
+  machine_name: PENDING
+  model: PENDING
+  serial_number: PENDING
+  manufacturer: PENDING
+  installation_location: PENDING
+  project_date: PENDING
+  auditor: Ravikumar
+  tier: PENDING
+  scenario: A
+  data_completeness: PENDING
+
+machine_overview:
+  intended_use: PENDING
+  prohibited_use: PENDING
+  machine_description: PENDING
+  year_of_manufacture: PENDING
+  machine_dimensions: PENDING
+  machine_weight: PENDING
+  power_supply:
+    electrical: PENDING
+    pneumatic: PENDING
+    hydraulic: PENDING
+  control_system:
+    type: PENDING
+    plc_details: PENDING
+    hmi_details: PENDING
+  operators_required: PENDING
+  shifts_per_day: PENDING
+
+risk_assessment:
+  ra_available: PENDING
+  ra_source: PENDING
+  ra_date: PENDING
+  hazard_summary:
+    total_hazards: PENDING
+    hazard_categories: PENDING
+  key_hazards:
+    - id: PENDING
+      description: PENDING
+      location: PENDING
+      risk_level: PENDING
+  residual_risk_present: PENDING
+
+loto:
+  loto_required: YES
+  loto_points:
+    - id: PENDING
+      energy_type: PENDING
+      isolation_method: PENDING
+      location: PENDING
+      lockout_possible: PENDING
+  loto_sequence:
+    deenergization: PENDING
+    reenergization: PENDING
+
+emergency_stop:
+  estop_present: PENDING
+  estop_locations: PENDING
+  stop_category: PENDING
+  reset_procedure: PENDING
+  testing_frequency: PENDING
+
+operations:
+  pre_start_checks: PENDING
+  startup_procedure: PENDING
+  normal_operation: PENDING
+  shutdown_procedure: PENDING
+  abnormal_conditions: PENDING
+
+maintenance:
+  maintenance_required: PENDING
+  schedule:
+    weekly: PENDING
+    monthly: PENDING
+    six_monthly: PENDING
+  lubrication_points: PENDING
+  consumables: PENDING
+  troubleshooting: PENDING
+
+schematics:
+  electrical: PENDING
+  pneumatic: PENDING
+  hydraulic: PENDING
+  notes: PENDING
+
+hmi_alarms:
+  available: PENDING
+  alarm_list: PENDING
+
+safety_features:
+  guards: PENDING
+  interlocks: PENDING
+  safety_devices: PENDING
+  safety_plc: PENDING
+  performance_level: PENDING
+
+compliance:
+  standards_applicable:
+    - ISO 12100:2010
+    - ISO 20607:2019
+    - IEC 82079-1:2019
+    - IS 4571:2008
+    - Factories Act 1948
+  additional_standards: PENDING
+  compliance_status: PENDING
+
+operator_insights:
+  common_errors: PENDING
+  unsafe_practices: PENDING
+  practical_tips: PENDING
+
+images:
+  total_images: PENDING
+  categorized:
+    overview: []
+    loto: []
+    estop: []
+    operations: []
+    maintenance: []
+    safety: []
+    schematics: []
+
+open_actions:
+  - id: PENDING
+    description: PENDING
+    category: PENDING
+    source: PENDING
+    responsibility: PENDING
+    target_date: PENDING
+    status: OPEN
+
+data_gaps:
+  - field: PENDING
+    reason: PENDING
+    required_from: PENDING
+
+source_traceability:
+  - field: PENDING
+    source_file: PENDING
+    confidence: HIGH/MEDIUM/LOW
+```
