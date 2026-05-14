@@ -1,0 +1,8 @@
+"#","File","Location","Purpose"
+"1","INDEX.md","Root /","Master map — which file goes where, project register, quick start"
+"2","README.md","Root /","GitHub landing page — repo overview"
+"3","CLAUDE.md","Root /","AI behavior rules for Claude — mode selection, tier framework, what NOT to do"
+"4","PRD.md","Root /","Project Requirements Document — all projects, standards, pricing, deliverables"
+"5","instructions.md","Root /","Full integrated workflow — Tier A/B/C, 4-phase model, prompt templates, Open Actions, image management"
+"6","DFM.md","Root /","DFM rules — Indo MIM → Tata / Apple ONLY"
+"7","PROJECT-README-TEMPLATE.md","Root /","Master template — copy into each project folder"
