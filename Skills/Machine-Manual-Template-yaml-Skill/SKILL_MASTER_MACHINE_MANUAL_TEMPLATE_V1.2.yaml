@@ -1,0 +1,135 @@
+project:
+  project_id: PENDING
+  project_name: PENDING
+  client: PENDING
+  end_user: PENDING
+  machine_name: PENDING
+  machine_type: PENDING
+  manufacturer: PENDING
+  installation_location: PENDING
+  project_type: STANDARD   # STANDARD | DFM
+  tier: PENDING            # A | B | C
+  scenario: PENDING        # A | B | C
+  manual_version: V1.0
+  target_pages: PENDING
+  author: "Certified Safety Professional"
+
+references:
+  risk_assessment:
+    available: PENDING
+    file_name: PENDING
+    version: PENDING
+    date: PENDING
+    prepared_by: PENDING
+  dfm:
+    available: PENDING
+    file_name: PENDING
+    version: PENDING
+    date: PENDING
+  drawings:
+    electrical: PENDING
+    pneumatic: PENDING
+    hydraulic: PENDING
+  photos_available: PENDING
+  operator_notes_available: PENDING
+  checklist_available: PENDING
+
+machine_overview:
+  intended_use: PENDING
+  foreseeable_misuse: PENDING
+  voltage: PENDING
+  power_kw: PENDING
+  air_pressure: PENDING
+  dimensions_lwh_mm: PENDING
+  machine_weight: PENDING
+  cycle_time_sec: PENDING
+  uph: PENDING
+  operator_headcount: PENDING
+  operating_environment: PENDING
+  control_system:
+    plc: PENDING
+    hmi: PENDING
+    safety_plc: PENDING
+
+hazards:
+  methodology: "ISO 12100"
+  hazard_categories: PENDING
+  personnel_categories: PENDING
+  residual_risks: PENDING
+
+loto:
+  loto_points:
+    - id: LP-01
+      energy_source: PENDING
+      isolation_method: PENDING
+      location: PENDING
+      status: PENDING
+  de_energization_sequence: PENDING
+  re_energization_sequence: PENDING
+
+emergency_stop:
+  estop_locations: PENDING
+  stop_category: PENDING
+  reset_procedure: PENDING
+  periodic_testing: PENDING
+
+operations:
+  pre_start_checklist: PENDING
+  startup_sequence: PENDING
+  normal_cycle: PENDING
+  shutdown_sequence: PENDING
+  operating_modes: PENDING
+
+maintenance:
+  weekly: PENDING
+  monthly: PENDING
+  six_monthly: PENDING
+  troubleshooting: PENDING
+  lubrication_schedule: PENDING
+
+schematics:
+  electrical: PENDING
+  pneumatic: PENDING
+  hydraulic: PENDING
+
+hmi_alarms:
+  available: PENDING
+  alarm_list: PENDING
+
+safety_features:
+  architecture: PENDING
+  safety_devices: PENDING
+  interlocks: PENDING
+  sto: PENDING
+  pl_sil: PENDING
+
+compliance:
+  standards:
+    - ISO 12100:2010
+    - ISO 20607:2019
+    - IEC 82079-1:2019
+    - IS 4571:2008
+    - Factories Act 1948
+  deviations: PENDING
+
+images:
+  inventory: PENDING
+  placeholders_required: PENDING
+
+open_actions:
+  - oa_id: OA-PENDING-001
+    description: PENDING
+    section: PENDING
+    category: PENDING
+    responsibility: PENDING
+    target: PENDING
+    status: OPEN
+
+data_gaps:
+  - field: PENDING
+    reason: PENDING
+
+approval:
+  manufacturer_signoff: PENDING
+  end_user_signoff: PENDING
+  author_signoff: PENDING

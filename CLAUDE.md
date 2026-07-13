@@ -21,6 +21,8 @@ Output per project: `.docx` manual + `.xlsx` Open Actions Register, ISO/IEC/ANSI
 | P4   | Indo-MIM → Tata Electronics | BG Snap Assembly Machine (V67)   | A    | ✅ Complete                 |
 | P5+  | TBD                         | TBD                              | TBD  | Pending — follow WORKFLOW_B |
 
+Note for P5+ projects: if Ravi wants Codex to prepare raw RA/drawing/photo inputs before Claude Code authors the manual, use `WORKFLOW_C.md` as the VS Code bridge workflow.
+
 ---
 
 ## 2. Mode Selection — Confirm at Session Start
@@ -28,27 +30,31 @@ Output per project: `.docx` manual + `.xlsx` Open Actions Register, ISO/IEC/ANSI
 | Mode           | When                                              | Spec file to read               |
 |----------------|---------------------------------------------------|---------------------------------|
 | **Workflow B** | Default — Claude Code / VS Code                   | `WORKFLOW_B.md`                 |
+| **Workflow C** | When Ravi explicitly says to use Codex prep + Claude Code authoring inside VS Code | `WORKFLOW_C.md`                 |
 | **Workflow A** | Only if Ravi explicitly says so (chat-based path) | `WORKFLOW_A.md`                 |
 | **DFM mode**   | Only if Ravi says "DFM project" at session start  | `DFM.md` + Indo-MIM/Apple rules |
 
 > If mode is not stated → **assume Workflow B**.
+> If Ravi says "Workflow C" or asks for Codex prep before Claude Code authoring → **read `WORKFLOW_C.md` first**, then follow its role split.
 > If DFM seems to apply but Ravi hasn't said so → **ask before proceeding**.
 > Workflow A and Workflow B are **independent paths** — do not mix them.
+> Workflow C is a VS Code bridge workflow: Codex prepares structured inputs, then Claude Code follows Workflow B from the authoring/generation stage.
 
 ---
 
 ## 3. Authoritative Source Files
 
-All live under `Machine manual MD files/New work structure/`:
+All live under `Skills/`:
 
-| File                               | Read it for                                             |
-|------------------------------------|---------------------------------------------------------|
-| `WORKFLOW_B.md`                    | Full Workflow B — inputs, drafting, generation, review  |
-| `WORKFLOW_A.md`                    | Workflow A (chat path) — reference only in Claude Code  |
-| `OSM_WORD_FORMAT_STANDARD_V1_2.md` | All formatting — page, typography, colours, flowcharts  |
-| `Machine_Manuals_skill.md`         | Section-level guidance, prompts, phase details          |
-| `DFM.md`                           | Indo-MIM / Apple projects only                          |
-| `PROJECT-README-TEMPLATE.md`       | Copy into each new project folder and fill in           |
+| File                                                                    | Read it for                                             |
+|-------------------------------------------------------------------------|---------------------------------------------------------|
+| `Skills/Workflow/WORKFLOW_B.md`                                         | Full Workflow B — inputs, drafting, generation, review  |
+| `Skills/Workflow/WORKFLOW_C.md`                                         | VS Code bridge workflow — Codex prep assistant + Claude Code main author |
+| `Skills/Workflow/WORKFLOW_A.md`                                         | Workflow A (chat path) — reference only in Claude Code  |
+| `Skills/Word-format/SKILL_OSM_WORD_FORMAT_STANDARD_V1_2.md`            | All formatting — page, typography, colours, flowcharts  |
+| `Skills/Machine-Manual-Skill/Machine_Manuals_SKILL.md`                  | Section-level guidance, prompts, phase details          |
+| `Skills/DFM/SKILL DFM.md`                                               | Indo-MIM / Apple projects only                          |
+| `Skills/Machine-Manual-Template-yaml-Skill/SKILL_MASTER_MACHINE_MANUAL_TEMPLATE_V1.2.yaml` | Master YAML template skeleton for new projects |
 
 **Superseded — do not use for current rules:**
 `README.md`, `PRD.md`, `INDEX.md`, `instructions.md`, `MACHINE_MANUAL_INTEGRATED_WORKFLOW.md`,
@@ -65,15 +71,19 @@ Machine-Manuals---Desktop/
 ├── CLAUDE.md                               ← this file (repo root)
 ├── .gitattributes
 ├── MachineManaul_NewProject_SOP_V1.2.docx  ← new-project SOP reference
-├── master_yaml_template.yaml               ← optional skeleton for section_content.yaml
-├── Machine manual MD files/
-│   └── New work structure/                 ← all authoritative .md files live here
-│       ├── WORKFLOW_A.md
-│       ├── WORKFLOW_B.md
-│       ├── OSM_WORD_FORMAT_STANDARD_V1_2.md
-│       ├── Machine_Manuals_skill.md
-│       ├── DFM.md
-│       └── PROJECT-README-TEMPLATE.md
+├── Skills/                                 ← all authoritative skill/workflow files live here
+│   ├── Workflow/
+│   │   ├── WORKFLOW_A.md
+│   │   ├── WORKFLOW_B.md
+│   │   └── WORKFLOW_C.md
+│   ├── Word-format/
+│   │   └── SKILL_OSM_WORD_FORMAT_STANDARD_V1_2.md
+│   ├── Machine-Manual-Skill/
+│   │   └── Machine_Manuals_SKILL.md
+│   ├── DFM/
+│   │   └── SKILL DFM.md
+│   └── Machine-Manual-Template-yaml-Skill/
+│       └── SKILL_MASTER_MACHINE_MANUAL_TEMPLATE_V1.2.yaml
 ├── Master template/                        ← local only, not yet in GitHub
 └── Projects/
     ├── P1-accurate-machines/
@@ -257,6 +267,7 @@ Full section map by tier → `WORKFLOW_B.md`.
 | If Ravi says…                               | Do this                                                                                                                                                             |
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | "New project" / "new customer"              | Ask tier-scoping questions (RA available? Schematics? PLC docs? Machine age?). Create `Projects/P[n]-shortname/` with full subfolder structure. Copy and fill `PROJECT-README-TEMPLATE.md`. |
+| "Use Workflow C" / "Codex prep first"       | Read `WORKFLOW_C.md`. Codex prepares `01-codex-output/` only; Claude Code then reviews those inputs, authors the manual, and generates `.docx` + `.xlsx`. |
 | "Here are my inputs, start the manual"      | Read `WORKFLOW_B.md`. Ingest all raw inputs. Ask gap questions in one batch. Confirm tier. Draft content. Produce `machine_data.json` + `section_content.yaml` for Ravi's approval. |
 | "Content approved, generate the manual"     | Read `/mnt/skills/public/docx/SKILL.md` first. Then `/mnt/skills/public/xlsx/SKILL.md`. Generate `.docx` section by section, validate after each. Generate `.xlsx` separately. |
 | "Generate the Open Actions Register"        | Read `/mnt/skills/public/xlsx/SKILL.md`. Build standalone `.xlsx` from `open_actions[]` in `machine_data.json`. Never inside the manual.                            |
