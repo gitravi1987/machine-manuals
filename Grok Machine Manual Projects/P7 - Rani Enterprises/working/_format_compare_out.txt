@@ -1,0 +1,140 @@
+﻿PRIMARY INDO V5.0 not readable: Package not found at 'C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Projects\P5 - Indo MIM\IndoMIM_BGSnap_OSM_V5.0.docx'
+Using fallback: C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Projects\P5 - Indo MIM\IndoMIM_BGSnap_OSM_V5.0 - 1.docx
+================================================================================
+INDO-MIM V5
+C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Projects\P5 - Indo MIM\IndoMIM_BGSnap_OSM_V5.0 - 1.docx
+size_bytes 1309200
+n_sections 1
+n_paragraphs 391
+n_tables 57
+n_images_rels 9
+section[0] geom {'page_w_mm': 210.0, 'page_h_mm': 297.0, 'left_mm': 25.0, 'right_mm': 25.0, 'top_mm': 25.0, 'bottom_mm': 25.0, 'header_mm': 12.0, 'footer_mm': 12.0, 'diff_first': True, 'orientation': 'PORTRAIT (0)'}
+section[0] header ["first_page: ''", 'default: ']
+section[0] footer ["first_page: ''", 'default: CONFIDENTIAL']
+styles {'Normal': {'font': None, 'size_pt': None, 'bold': None, 'color': None, 'space_before': None, 'space_after': None}, 'Heading 1': {'font': None, 'size_pt': 14.0, 'bold': True, 'color': '365F91', 'space_before': 24.0, 'space_after': None}, 'Heading 2': {'font': None, 'size_pt': 13.0, 'bold': True, 'color': '4F81BD', 'space_before': 10.0, 'space_after': None}, 'Heading 3': {'font': None, 'size_pt': None, 'bold': True, 'color': '4F81BD', 'space_before': 10.0, 'space_after': None}, 'Title': {'font': None, 'size_pt': 26.0, 'bold': None, 'color': '17365D', 'space_before': None, 'space_after': 15.0}, 'List Bullet': {'font': None, 'size_pt': None, 'bold': None, 'color': None, 'space_before': None, 'space_after': None}}
+run fonts [('Calibri', 277), ('(inherit/None)', 4)]
+run sizes [(12.0, 10), (10.0, 4), (13.0, 3), (14.0, 2), (22.0, 1), (18.0, 1), (9.0, 1)]
+run colors [('000000', 171), ('1F3864', 95), ('777777', 6), ('555555', 5), ('(auto/None)', 4)]
+bold sizes [(12.0, 7), (13.0, 3), (14.0, 2), (22.0, 1), (18.0, 1)]
+para styles used [('Normal', 195), ('Heading 2', 71), ('toc 2', 59), ('List Bullet', 38), ('toc 1', 14), ('Heading 1', 14)]
+outline levels []
+large text samples:
+  (22.0, True, '1F3864', 'Calibri', 'OPERATING & SAFETY MANUAL', 'Normal')
+  (18.0, True, '1F3864', 'Calibri', 'BG Snap Assembly Machine', 'Normal')
+  (12.0, False, '555555', 'Calibri', 'Indo-MIM', 'Normal')
+  (12.0, False, '555555', 'Calibri', 'Pvt', 'Normal')
+  (12.0, False, '555555', 'Calibri', 'Limited  |  Tata Electronics, Hosur', 'Normal')
+  (14.0, True, '1F3864', 'Calibri', 'TABLE OF CONTENTS', 'Normal')
+  (13.0, True, '1F3864', 'Calibri', 'Refer to Section 13 for the full Liability Disclaimer.', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', '3.3.1  Mechanical Hazards', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', '3.3.2  Electrical Hazards', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', '3.3.3  Ergonomic Hazards', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', '3.3.4  Control System Hazards', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', 'Indo-MIM Limited ΓÇö Manufacturer Authorization', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', 'Tata Electronics ΓÇö End User Authorization', 'Normal')
+  (12.0, True, '1F3864', 'Calibri', 'Certified Safety Professional ΓÇö Manual Author', 'Normal')
+  (13.0, True, '1F3864', 'Calibri', '[SECTION REMOVED ΓÇö Residual Risk Summary appendix permanently removed ', 'Normal')
+  (13.0, True, '1F3864', 'Calibri', 'A.2  PPE Requirements', 'Normal')
+  (14.0, True, '1F3864', 'Calibri', 'APPENDIX C ΓÇö LOTO LOG TEMPLATE', 'Normal')
+table stats {'n_tables_total': 57, 'n_tables_sampled': 50, 'col_counts': [(1, 14), (3, 13), (2, 12), (4, 9), (5, 1), (6, 1)], 'fills': [('1F3864', 110), ('FFFFFF', 106), ('FCE4D6', 6), ('FFF2CC', 5), ('F7F7F7', 3), ('C6D9F1', 3), ('D9E1F2', 1)], 'border_colors': [('000000', 5)], 'border_sizes': [('8', 5)], 'header_run_colors': [('FFFFFF', 109), ('000000', 14), ('CC0000', 12), ('777777', 6), ('555555', 3)]}
+table first-row samples:
+  ['Document Title', 'Operating & Safety Manual ΓÇö BG Snap Asse']
+  ['Audience', 'Sections to Read']
+  ['Signal Word', 'Meaning']
+  ['Rev', 'Date', 'Description', 'Prepared By']
+  ['Code', 'Description', 'Used In']
+  ['Field', 'Details']
+  ['Parameter', 'Specification']
+  ['Station', 'Name', 'Function', 'Key Equipment']
+heading-like:
+  ('OPERATING & SAFETY MANUAL', 'Normal', None, 22.0, ['1F3864'], True)
+  ('1.  FRONT MATTER', 'Heading 1', None, None, ['1F3864'], False)
+  ('1.1  Document Scope', 'Heading 2', None, None, ['1F3864'], False)
+  ('1.2  Intended Audience', 'Heading 2', None, None, ['1F3864'], False)
+  ('1.3  General Safety Rules', 'Heading 2', None, None, ['1F3864'], False)
+  ('1.4  Signal Word Hierarchy', 'Heading 2', None, None, ['1F3864'], False)
+  ('1.5  Revision History', 'Heading 2', None, None, ['1F3864'], False)
+  ('1.6  ISO 7010 Safety Signs Used in This Manual', 'Heading 2', None, None, ['1F3864'], False)
+  ('Refer to Section 13 for the full Liability Disclaimer.', 'Normal', None, 13.0, ['1F3864'], True)
+  ('2.  MACHINE OVERVIEW', 'Heading 1', None, None, ['1F3864'], False)
+  ('2.1  Machine Identification', 'Heading 2', None, None, ['1F3864'], False)
+  ('2.2  Technical Specifications', 'Heading 2', None, None, ['1F3864'], False)
+  ('2.3  Intended Use', 'Heading 2', None, None, ['1F3864'], False)
+  ('2.4  Station Layout & Line Configuration', 'Heading 2', None, None, ['1F3864'], False)
+  ('2.5  Key Components', 'Heading 2', None, None, ['1F3864'], False)
+  ('2.6  Maintenance Access Zones', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.  HAZARD IDENTIFICATION & RISK ASSESSMENT', 'Heading 1', None, None, ['1F3864'], False)
+  ('3.1  Methodology', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.2  Hazard Summary', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.3  Hazard Narratives', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.4  Risk Reduction Hierarchy (ISO 12100)', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.5  Applicable Standards', 'Heading 2', None, None, ['1F3864'], False)
+  ('3.6  Personnel Categories', 'Heading 2', None, None, ['1F3864'], False)
+  ('4.  LOCKOUT / TAGOUT (LOTO) PROCEDURES', 'Heading 1', None, None, ['1F3864'], False)
+  ('4.1  Energy Isolation Points', 'Heading 2', None, None, ['1F3864'], False)
+  ('4.2  LOTO Equipment Required', 'Heading 2', None, None, ['1F3864'], False)
+  ('4.3  De-energization Sequence (Tag-Out)', 'Heading 2', None, None, ['1F3864'], False)
+  ('4.4  Re-energization Sequence (Tag-In)', 'Heading 2', None, None, ['1F3864'], False)
+  ('4.5  Partial Isolation', 'Heading 2', None, None, ['1F3864'], False)
+  ('5.  EMERGENCY STOP FUNCTION', 'Heading 1', None, None, ['1F3864'], False)
+first 25 non-empty paragraphs:
+  [Normal] 'OPERATING & SAFETY MANUAL' :: ['Calibri/22.0pt/b=True/c=1F3864']
+  [Normal] 'BG Snap Assembly Machine' :: ['Calibri/18.0pt/b=True/c=1F3864']
+  [Normal] 'Indo-MIM Pvt Limited  |  Tata Electronics, Hosur' :: ['Calibri/12.0pt/b=None/c=555555', 'Calibri/12.0pt/b=None/c=555555', 'Calibri/12.0pt/b=None/c=555555']
+  [Normal] 'CONFIDENTIAL' :: ['Calibri/9.0pt/b=None/c=555555']
+  [Normal] 'TABLE OF CONTENTS' :: ['Calibri/14.0pt/b=True/c=1F3864']
+  [Normal] 'Right-click this area in Word and select Update Field (or press Ctrl+A then F9) to generate the Tabl' :: ['Calibri/10.0pt/b=None/c=555555']
+  [toc 1] '1.  FRONT MATTER\t5' :: []
+  [toc 2] '1.1  Document Scope\t5' :: []
+  [toc 2] '1.2  Intended Audience\t5' :: []
+  [toc 2] '1.3  General Safety Rules\t5' :: []
+  [toc 2] '1.4  Signal Word Hierarchy\t5' :: []
+  [toc 2] '1.5  Revision History\t6' :: []
+  [toc 2] '1.6  ISO 7010 Safety Signs Used in This Manual\t6' :: []
+  [toc 1] '2.  MACHINE OVERVIEW\t7' :: []
+  [toc 2] '2.1  Machine Identification\t7' :: []
+  [toc 2] '2.2  Technical Specifications\t7' :: []
+  [toc 2] '2.3  Intended Use\t7' :: []
+  [toc 2] '2.4  Station Layout & Line Configuration\t7' :: []
+  [toc 2] '2.5  Key Components\t8' :: []
+  [toc 2] '2.6  Maintenance Access Zones\t8' :: []
+  [toc 1] '3.  HAZARD IDENTIFICATION & RISK ASSESSMENT\t10' :: []
+  [toc 2] '3.1  Methodology\t10' :: []
+  [toc 2] '3.2  Hazard Summary\t10' :: []
+  [toc 2] '3.3  Hazard Narratives\t10' :: []
+  [toc 2] '3.4  Risk Reduction Hierarchy (ISO 12100)\t11' :: []
+================================================================================
+P7 RANI V1.0
+C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Grok Machine Manual Projects\P7 - Rani Enterprises\outputs\RaniEnterprises_RoboticSealantDispenser_OSM_V1.0.docx
+size_bytes 28761386
+python : Traceback (most recent call last):
+At line:1 char:1
++ python "C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Hal ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Grok Machine Manual 
+Projects\P7 - Rani Enterprises\working\_format_compare_readonly.py", line 350, in <module>
+    main()
+  File "C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Grok Machine Manual 
+Projects\P7 - Rani Enterprises\working\_format_compare_readonly.py", line 346, in main
+    analyze("P7 RANI V1.0", P7)
+  File "C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Grok Machine Manual 
+Projects\P7 - Rani Enterprises\working\_format_compare_readonly.py", line 282, in analyze
+    doc = Document(str(path))
+  File "C:\Users\Ravi.Kumar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-
+packages\Python310\site-packages\docx\api.py", line 27, in Document
+    document_part = cast("DocumentPart", Package.open(docx).main_document_part)
+  File "C:\Users\Ravi.Kumar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-
+packages\Python310\site-packages\docx\opc\package.py", line 126, in open
+    pkg_reader = PackageReader.from_file(pkg_file)
+  File "C:\Users\Ravi.Kumar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-
+packages\Python310\site-packages\docx\opc\pkgreader.py", line 22, in from_file
+    phys_reader = PhysPkgReader(pkg_file)
+  File "C:\Users\Ravi.Kumar\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\LocalCache\local-
+packages\Python310\site-packages\docx\opc\phys_pkg.py", line 21, in __new__
+    raise PackageNotFoundError("Package not found at '%s'" % pkg_file)
+docx.opc.exceptions.PackageNotFoundError: Package not found at 'C:\Users\Ravi.Kumar\OneDrive - Halma Holdings 
+Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Grok Machine Manual Projects\P7 - Rani 
+Enterprises\outputs\RaniEnterprises_RoboticSealantDispenser_OSM_V1.0.docx'

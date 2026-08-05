@@ -1,0 +1,413 @@
+{
+  "project_code": "P7-Rani-Sealant",
+  "status": "Draft",
+  "revision": "V1.0",
+  "date": "July 2026",
+  "revision_note": "V1.0 — photo + intake README draft; no Machine Safety Assessment available",
+  "end_user": "**[PLACEHOLDER — end-user facility name / site address]**",
+  "client": "Rani Enterprises",
+  "manufacturer": "Rani Enterprises",
+  "machine_name": "Robotic Sealant Dispenser Machine",
+  "machine_type": "Robotic sealant / glue dispensing machine",
+  "machine_ref": "Robotic Sealant Dispenser Machine — Fisnar F4303N ADVANCE integrated cell",
+  "site": "**[PLACEHOLDER — installation site address]**",
+  "assessment_date": null,
+  "assessment_ref": "No formal Machine Safety Assessment available at time of drafting — OPEN ACTION OA-P7-001",
+  "author_role": "Certified Safety Professional",
+  "section_map": [
+    "1 Front Matter",
+    "2 Machine Overview",
+    "3 Hazard Identification",
+    "4 Lockout / Tagout (LOTO)",
+    "5 Emergency Stop",
+    "6 Operating Instructions",
+    "7 Maintenance & Care",
+    "8 HMI, Alarms & Controls",
+    "9 Safety Features, Schematics & Compliance",
+    "Appendix A Maintenance Log Template",
+    "Appendix B LOTO Log Template"
+  ],
+  "electrical": {
+    "voltage": "**[PLACEHOLDER — supply voltage, source: nameplate / site electrical, status: not on machine label photo]**",
+    "phases": "**[PLACEHOLDER — single / three phase]**",
+    "frequency": "**[PLACEHOLDER — typically 50 Hz India; confirm]**",
+    "power_rating": "**[PLACEHOLDER — machine power rating kW / A unknown]**",
+    "control_voltage": "24 VDC power supply observed (Mean Well NDR-240-24 in panel)",
+    "plc": "Mitsubishi compact PLC observed in panel (exact model string **[PLACEHOLDER — read PLC faceplate]**)",
+    "hmi": "Mitsubishi Electric touchscreen HMI labelled GLUE DISPENSER",
+    "psu": "Mean Well NDR-240-24 (photo PLC panel open)",
+    "enclosure": "Bhartia BCH control panel enclosure (sticker on door)",
+    "isolator": "Lauritz Knudsen OFF-salzer rotary POWER ON/OFF (red handle, yellow pad)",
+    "notes": "No complete electrical nameplate photographed. Do not invent kW/voltage."
+  },
+  "pneumatic": {
+    "plant_pressure_nominal": "6 bar (intake README; FRL gauge photo shows operation near ~6 bar)",
+    "dispenser_inlet_setpoint_range": "2.00 – 3.00 bar (HMI Settings screen photo)",
+    "dispenser_pressure_observed": "2.51 bar (HMI Process screen instance — not a nameplate rating)",
+    "frl": "SMC filter-regulator-lubricator bank with pressure gauge and pressure-switch area label",
+    "notes": "Isolate and dump residual air before maintenance. Lockable air isolation valve type **[PLACEHOLDER — OA-P7-007]**"
+  },
+  "hydraulic": {
+    "applicable": false,
+    "notes": "NA — no hydraulic system observed"
+  },
+  "capacity": "**[PLACEHOLDER — sealant cartridge/syringe capacity; OA-P7-006]**",
+  "cycle_time": {
+    "observed_instance": "12.1 s displayed on HMI Process screen (instance only)",
+    "specified": "**[PLACEHOLDER — customer cycle-time specification unknown]**"
+  },
+  "operating_modes": ["AUTO", "MANUAL"],
+  "workpiece": "**[PLACEHOLDER — component part number / description]** — white plastic component on black fixture tray (photos)",
+  "models_supported": ["JPTP", "MGTP", "APTDPT"],
+  "models_note": "Model Selection HMI shows slots 1–27; populated names observed: JPTP, MGTP, APTDPT. Robot program number displayed separately.",
+  "process_summary": "Operator places component on fixture tray. Operator presses dual two-hand cycle-start buttons. Front automatic door closes (slides from top per intake). Fisnar robot applies sealant path for selected model/program. Cycle completes; door opens; operator unloads part. On idle, parking and purging sequence moves tip to parking/purging cups to prevent tip dry-out (HMI Idle Time To Go Parking = 3.0 min as photographed).",
+  "idle_parking": {
+    "hmi_setting_minutes": 3.0,
+    "parking_purging_sequence": "ON (HMI Settings photo)",
+    "intake_note_conflict": "Intake README mentioned ~1 minute; HMI photo shows 3.0 Min — use HMI photo as as-built setting; process risk of tip dry-out remains — document in OPEN ACTION if process requires shorter idle"
+  },
+  "robot": {
+    "make_model": "Fisnar F4303N ADVANCE",
+    "dispenser_brand": "Fisnar (blue cartridge/syringe housing)",
+    "axis_speed": "**[PLACEHOLDER — guide/axis speed unknown]**",
+    "controller_face_controls": [
+      "DISPENSER PURGE (orange)",
+      "PROG NO. thumbwheels",
+      "RUN / TEACH rocker",
+      "START (green illuminated)",
+      "EMERGENCY STOP (red mushroom, twist-reset style)",
+      "Power LED",
+      "Teach Pendant / USB ports"
+    ]
+  },
+  "hmi": {
+    "title": "GLUE DISPENSER",
+    "brand": "Mitsubishi Electric",
+    "menu_buttons": [
+      "AUTO",
+      "MANUAL",
+      "MODEL SELECTION",
+      "SETTINGS",
+      "ALARM",
+      "ALARM HISTORY",
+      "DATA LOG",
+      "INPUT STATUS",
+      "OUTPUT STATUS",
+      "I/O LIST",
+      "LOG DATA"
+    ],
+    "status_indicators": [
+      "AUTO MODE",
+      "MANUAL MODE",
+      "AIR PRESSURE",
+      "EMERGENCY",
+      "LH SIDE DOOR CLOSE",
+      "RH SIDE DOOR CLOSE",
+      "ROBOT EMERGENCY",
+      "ROBOT RUNNING",
+      "ROBOT STANDBY"
+    ],
+    "settings_observed": {
+      "dispenser_inlet_pressure_min_bar": 2.0,
+      "dispenser_inlet_pressure_max_bar": 3.0,
+      "pressure_check_delay_sec": 1.0,
+      "dispenser_pressure_check": "ON",
+      "side_door_safety_sensor": "ON",
+      "front_automatic_safety_door": "ON",
+      "idle_time_to_go_parking_min": 3.0,
+      "parking_and_purging_sequence": "ON"
+    },
+    "network_labels_on_screen": {
+      "plc_ip_label": "192.168.100.010",
+      "hmi_ip_label": "192.168.100.011",
+      "note": "As displayed on HMI menu photo — site configuration; confirm before network changes"
+    }
+  },
+  "alarms_observed": [
+    {
+      "message": "Air Pressure Low",
+      "source": "HMI Alarms.jpg live list"
+    },
+    {
+      "message": "Robot Emergency Pressed [X12]",
+      "source": "HMI Alarms.jpg live list"
+    },
+    {
+      "message": "Front Auto Door open Error [X6]",
+      "source": "HMI Alarms.jpg live list"
+    },
+    {
+      "message": "Machine Emergency Pressed [X0]",
+      "source": "HMI Process.jpg status banner"
+    }
+  ],
+  "photo_evidence": [
+    "Images/Full view Front.jpg — full front cell, HMI, two-hand stations, process zone, Fisnar base",
+    "Images/Full view side.jpg — side doors, tower light, control panel open",
+    "Images/Nameplate.jpg — ROBOTIC SEALANT DISPENSER MACHINE label",
+    "Images/Panel.jpg — Bhartia BCH enclosure exterior",
+    "Images/PLC panel open.jpg — Mitsubishi PLC, Mean Well NDR-240-24, MCBs, relays",
+    "Images/HMI Modes.jpg — main menu AUTO/MANUAL/MODEL/SETTINGS/ALARM",
+    "Images/HMI Modes 2.jpg — MODEL SELECTION JPTP/MGTP/APTDPT",
+    "Images/HMI Process.jpg — process status, cycle time, dispenser pressure, X0 banner",
+    "Images/HMI Settings.jpg — pressure, door sensors, idle parking 3.0 min",
+    "Images/HMI Alarms.jpg — live alarms list",
+    "Images/two hand button full view.jpg — dual stations + robot E-Stop face",
+    "Images/left side push button and reset.jpg — RESET + TWO HAND CYCLE START",
+    "Images/right side push button and estop.jpg — TWO HAND CYCLE START + E STOP",
+    "Images/Isolato switch.jpg — POWER ON/OFF rotary isolator",
+    "Images/Pneumatic FRL.jpg — SMC FRL ~6 bar",
+    "Images/Omron safety switch.jpg — Omron GLS-M1",
+    "Images/Dispenser.jpg — Fisnar blue dispenser",
+    "Images/dispenser parking.jpg — tip over parking cup",
+    "Images/dispenser purging.jpg — purging cup detail",
+    "Images/Component on tray.jpg — workpiece on fixture",
+    "Images/component tray button.jpg — robot face controls close-up",
+    "Images/Front door pneumatic view.jpg — front door pneumatic elements",
+    "Images/fron door rear view.jpg — front door rear view",
+    "Images/Right side door open.jpg / Side view door open left.jpg — side door access"
+  ],
+  "loto_points": [
+    {
+      "id": "LP-01",
+      "energy_type": "Electrical",
+      "image_code": "IEC60417-5036",
+      "isolation_method": "Main rotary POWER ON/OFF isolator — turn to OFF; apply lockout hasp/padlock if hasp fitted; verify zero energy",
+      "location": "Control panel side — labelled POWER ON/OFF (Lauritz Knudsen OFF-salzer; Isolato switch.jpg)",
+      "verification": "Confirm HMI/robot powered down; use approved voltage test procedures by skilled person before panel work"
+    },
+    {
+      "id": "LP-02",
+      "energy_type": "Pneumatic",
+      "image_code": "ISO7010-M004",
+      "isolation_method": "Isolate plant air supply to machine; dump residual pressure at FRL/downstream path; lock isolation device if lockable",
+      "location": "SMC FRL / pressure-switch area on panel side (Pneumatic FRL.jpg)",
+      "verification": "Gauge at zero; actuators free of residual pressure; confirm door/robot air circuits exhausted"
+    }
+  ],
+  "operator_controls": {
+    "two_hand_stations": [
+      "Left front: yellow RESET + green TWO HAND CYCLE START",
+      "Right front: green TWO HAND CYCLE START + red E STOP"
+    ],
+    "hmi": "Upper front panel Mitsubishi HMI (GLUE DISPENSER)",
+    "robot_local": "Fisnar F4303N face: purge, program number, run/teach, start, robot emergency stop",
+    "notes": "Cycle start requires simultaneous two-hand green buttons per intake description and labelled stations"
+  },
+  "safety_devices": [
+    {
+      "id": "SD-01",
+      "name": "Two-hand cycle start",
+      "detail": "Paired green TWO HAND CYCLE START buttons left and right of load zone (photos). Intended to keep hands clear during cycle start.",
+      "plr": "**[PLACEHOLDER — PLr / category not assessed — no Machine Safety Assessment]**"
+    },
+    {
+      "id": "SD-02",
+      "name": "Machine emergency stop (right station)",
+      "detail": "Red mushroom E STOP on right two-hand station (right side push button and estop.jpg). HMI references Machine Emergency Pressed [X0].",
+      "plr": "**[PLACEHOLDER — not assessed]**"
+    },
+    {
+      "id": "SD-03",
+      "name": "Robot emergency stop (Fisnar controller)",
+      "detail": "Red mushroom EMERGENCY STOP on Fisnar F4303N ADVANCE face. HMI references Robot Emergency Pressed [X12].",
+      "plr": "**[PLACEHOLDER — not assessed]**"
+    },
+    {
+      "id": "SD-04",
+      "name": "Front automatic safety door",
+      "detail": "Vertical/sliding automatic front door (intake: slides from top). HMI Settings: Front Automatic Safety Door ON. Alarm: Front Auto Door open Error [X6]. No light curtain fitted per intake notes — residual risk OPEN ACTION.",
+      "plr": "**[PLACEHOLDER — not assessed]**"
+    },
+    {
+      "id": "SD-05",
+      "name": "Side door non-contact interlocks (L/R)",
+      "detail": "Omron GLS-M1 non-contact safety switch photographed on side door structure. HMI: Side Door Safety Sensor ON; status LH/RH SIDE DOOR CLOSE.",
+      "plr": "**[PLACEHOLDER — not assessed]**"
+    },
+    {
+      "id": "SD-06",
+      "name": "Power isolation switch",
+      "detail": "Rotary red/yellow POWER ON/OFF isolator (Lauritz Knudsen OFF-salzer).",
+      "plr": "Isolation device (category/PLr not claimed without assessment)"
+    },
+    {
+      "id": "SD-07",
+      "name": "Pneumatic FRL + pressure monitoring",
+      "detail": "SMC FRL with gauge; HMI AIR PRESSURE status and Air Pressure Low alarm; dispenser pressure check setting ON.",
+      "plr": "Process/safety support — not formally rated in this draft"
+    },
+    {
+      "id": "SD-08",
+      "name": "Perimeter guarding / side doors / polycarbonate panels",
+      "detail": "Aluminium extrusion frame with side doors and process enclosure (full view photos). Guard integrity must be maintained.",
+      "plr": "**[PLACEHOLDER — not assessed]**"
+    },
+    {
+      "id": "SD-09",
+      "name": "Tower light (status beacon)",
+      "detail": "Red/amber/green stack light on machine top (Full view side.jpg). Exact colour meanings **[PLACEHOLDER — confirm site mapping]**.",
+      "plr": "Awareness only"
+    },
+    {
+      "id": "SD-10",
+      "name": "Moving-parts caution label (robot area)",
+      "detail": "CAUTION keep hands clear of moving parts label on robot structure (Dispenser.jpg / Component on tray.jpg).",
+      "plr": "Administrative / awareness"
+    }
+  ],
+  "e_stops": [
+    {
+      "id": "ES-01",
+      "location": "Right front two-hand station — labelled E STOP",
+      "type": "Push-button mushroom E-Stop",
+      "source": "right side push button and estop.jpg; HMI X0"
+    },
+    {
+      "id": "ES-02",
+      "location": "Fisnar F4303N ADVANCE controller face — EMERGENCY STOP",
+      "type": "Push-button mushroom E-Stop (twist-reset style per photo)",
+      "source": "component tray button.jpg; HMI X12"
+    }
+  ],
+  "hazards_narrative_topics": [
+    "Robot / axis motion — impact, shear, entanglement at dispenser tip and moving head",
+    "Front automatic door motion — crush/impact during close",
+    "Side door access during motion if interlock defeated",
+    "Pneumatic energy — unexpected actuator/door motion; residual pressure",
+    "Electrical energy — control panel shock risk during troubleshooting",
+    "Sealant chemical exposure — skin/eye/respiratory (product SDS missing)",
+    "Tip dry-out / process quality if parking-purge not used",
+    "Two-hand or interlock bypass — elevated injury risk"
+  ],
+  "ppe": [
+    "**[PLACEHOLDER — site PPE matrix]**",
+    "Safety footwear (recommended minimum industrial practice)",
+    "Eye protection when handling sealant or purging",
+    "Chemical-resistant gloves suitable for sealant product (per SDS when available)"
+  ],
+  "standards_in_use": [
+    "ISO 12100:2010",
+    "ISO 20607:2019",
+    "IEC 82079-1:2019",
+    "IS 4571:2008",
+    "ISO 13849-1 (principles — no PLr claims without assessment)",
+    "ISO 13850 (E-Stop principles)",
+    "ANSI B11.19 (safeguarding principles)",
+    "Factories Act 1948 (India)"
+  ],
+  "standards_excluded": [
+    "IEC 61508",
+    "IEC 61800-5-2"
+  ],
+  "open_actions": [
+    {
+      "id": "OA-P7-001",
+      "description": "Commission a formal Machine Safety Assessment by an Independent Safety Consultant. No RA report exists; residual risk and PLr claims cannot be finalised from photos alone.",
+      "category": "Risk Assessment",
+      "priority": "High",
+      "responsibility": "OEM / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-002",
+      "description": "Confirm electrical supply data: voltage, phases, frequency, full-load current / kW, machine serial number, year of manufacture. Photograph complete nameplate if present.",
+      "category": "Documentation",
+      "priority": "High",
+      "responsibility": "OEM / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-003",
+      "description": "Provide electrical schematic drawings for Section 9 insert (customer may paste drawings). Include panel layout and main isolator circuit.",
+      "category": "Documentation",
+      "priority": "High",
+      "responsibility": "OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-004",
+      "description": "Provide pneumatic schematic drawings for Section 9 insert (door cylinders, FRL, dispenser air path, isolation valves).",
+      "category": "Documentation",
+      "priority": "High",
+      "responsibility": "OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-005",
+      "description": "Validate front automatic safety door: closing force/edge protection, interlock behaviour, and residual risk of no light curtain at operator load face. Document required administrative controls.",
+      "category": "Safety Device",
+      "priority": "High",
+      "responsibility": "Independent Safety Consultant / OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-006",
+      "description": "Document sealant product identity, SDS, dispenser capacity, pot life / tip dry-out limit, and confirm idle parking time policy (HMI shows 3.0 min).",
+      "category": "Process / Chemical",
+      "priority": "High",
+      "responsibility": "OEM / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-007",
+      "description": "Confirm pneumatic isolation device is lockable (ball valve/hasp) and isolator lockout hardware (hasp/padlock) is available for LP-01/LP-02.",
+      "category": "LOTO",
+      "priority": "High",
+      "responsibility": "OEM / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-008",
+      "description": "Export full HMI/PLC alarm list and I/O map from project file (only partial live alarms captured in photos).",
+      "category": "Documentation",
+      "priority": "Medium",
+      "responsibility": "OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-009",
+      "description": "Confirm exact Mitsubishi PLC and HMI model numbers, software version, and network addresses for maintenance records.",
+      "category": "Documentation",
+      "priority": "Medium",
+      "responsibility": "OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-010",
+      "description": "Fill end-user facility name, site address, PPE matrix, training matrix, and authorised persons list.",
+      "category": "Documentation",
+      "priority": "Medium",
+      "responsibility": "End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-011",
+      "description": "Confirm robot axis speed limits, program ownership (who may teach), and whether teach mode is locked for production operators.",
+      "category": "Operation",
+      "priority": "Medium",
+      "responsibility": "OEM / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P7-012",
+      "description": "Map tower-light colour meanings (red/amber/green) to machine states for operator training.",
+      "category": "Operation",
+      "priority": "Low",
+      "responsibility": "OEM",
+      "target_date": "TBD",
+      "status": "Open"
+    }
+  ]
+}

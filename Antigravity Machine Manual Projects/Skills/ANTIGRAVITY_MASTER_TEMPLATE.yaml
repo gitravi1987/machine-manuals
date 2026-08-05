@@ -1,0 +1,48 @@
+# Skeleton for Antigravity OSM pilots — copy into project inputs and fill from RA
+# ALWAYS create pilots under:
+# C:\Users\Ravi.Kumar\OneDrive - Halma Holdings Inc\Desktop\Halma\Ravi\Work\Machine Manuals\Antigravity Machine Manual Projects\
+project_code: "Pxx"
+tier: "B"
+revision: "V1.0"
+status: "Antigravity Sample / Draft"
+
+machine:
+  name: ""
+  manufacturer: ""
+  end_user: ""
+  type: ""
+  site: ""
+  electrical: ""
+  pneumatic: ""
+  hydraulic: ""
+
+loto_points: []
+# - id: LP-01
+#   energy_type: Electrical
+#   isolation_method: ""
+#   location: ""
+
+open_actions: []
+# - id: OA-Pxx-001
+#   description: ""
+#   category: Documentation
+#   priority: High
+#   responsibility: Customer
+#   target_date: TBD
+#   status: Open
+
+sections:
+  1: Front Matter
+  2: Machine Overview
+  3: Hazard Identification & Risk Assessment
+  4: Lockout / Tagout (LOTO) Procedures
+  5: Emergency Stop Function
+  6: Operating Instructions
+  7: Maintenance & Care
+  8: Electrical Schematic
+  9: Pneumatic Schematic
+  10: HMI / Alarms & Fault Codes
+  11: Safety Features & Interlocks
+  12: Compliance & Certifications
+  appendix_a: Maintenance Log Template
+  appendix_b: LOTO Log Template

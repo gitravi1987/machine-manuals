@@ -1,0 +1,286 @@
+{
+  "project_code": "P2-Grok-Sample",
+  "status": "Grok Sample / Draft",
+  "tier": "B",
+  "revision": "V1.1",
+  "date": "July 2026",
+  "revision_note": "V1.1 — photo-backed control layout enrichment (Grok continue pass)",
+  "end_user": "Karthick Engineering & Maintenance Consultants (KEMC) / End-user facility per customer",
+  "client": "Karthick Engineering & Maintenance Consultants (KEMC)",
+  "manufacturer": "Karthick Engineering & Maintenance Consultants (KEMC)",
+  "machine_name": "Tilting Machine",
+  "machine_type": "Assembly Machine",
+  "machine_ref": "Tilting Machine — Clutch Plate Assembly Support",
+  "site": "No 22/50, Manickavasagam Street, Kumaran Nagar, Padi, Chennai – 600050, Tamil Nadu, India",
+  "assessment_date": "16 February 2026",
+  "assessment_ref": "Machine Safety Assessment — Tilting Machine (report date 16 February 2026)",
+  "electrical": {
+    "voltage": "230 V",
+    "phases": "Single phase",
+    "frequency": "50 Hz",
+    "notes": "Standard industrial electrical supply per Machine Safety Assessment"
+  },
+  "pneumatic": {
+    "pressure": "5 bar",
+    "notes": "Pneumatic supply for clamping cylinders; isolation per ISO 4414 practices"
+  },
+  "hydraulic": {
+    "applicable": false,
+    "notes": "NA per Machine Safety Assessment"
+  },
+  "capacity": "One assembled clutch plate per cycle",
+  "operating_modes": ["Manual", "Automatic"],
+  "time_limits": {
+    "days_per_year": 230,
+    "hours_per_day": 22,
+    "shifts_per_day": 3
+  },
+  "workpiece": "Assembled clutch plate",
+  "models_supported": ["230", "280", "310"],
+  "process_summary": "Operator lifts assembled clutch plate with small crane, places on tilting station, machine clamps and tilts to ergonomic angle, operator tightens nuts (nut runner), machine returns, clamps release, part unloaded.",
+  "photo_evidence": [
+    "inputs/photo-refs/P2_full_machine_front.jpeg — full front: dual two-hand stations, HMI, E-Stop, isolator, FRL, mesh door",
+    "inputs/photo-refs/P2_main_isolator_loto.jpeg — rotary isolator + lockout label",
+    "inputs/photo-refs/P2_clamp_tilt_fixture.jpeg — clamp/tilt with clutch plate",
+    "inputs/photo-refs/P2_guard_warning_sign.jpeg — mesh guard crush/cut warning",
+    "inputs/photo-refs/P2_side_guard_interface.jpeg — side guard interface / light curtain column area"
+  ],
+  "loto_points": [
+    {
+      "id": "LP-01",
+      "energy_type": "Electrical",
+      "image_code": "IEC60417-5036",
+      "isolation_method": "Main rotary ON/OFF power isolation switch — turn to OFF and lock with hasp/padlock",
+      "location": "Lower right front of machine base (red handle on yellow pad); lockout warning label adjacent (site photo)"
+    },
+    {
+      "id": "LP-02",
+      "energy_type": "Pneumatic",
+      "image_code": "ISO7010-M004",
+      "isolation_method": "Isolate plant air / machine pneumatic supply; dump residual pressure via FRL/isolation path; lock if hasp fitted",
+      "location": "Front lower right pneumatic FRL / regulator bank (site photo) + air isolation device per assessment (SF11)"
+    }
+  ],
+  "operator_controls": {
+    "two_hand_stations": [
+      "Left front dual-button station (red actuators + adjacent green control — site photo)",
+      "Right front dual-button station (red actuators + adjacent green control — site photo)"
+    ],
+    "hmi": "Operator HMI/touch panel mounted upper right on stainless control column (site photo)",
+    "notes": "RA states cycle start via two-hand push buttons; dual stations visible on front face"
+  },
+  "safety_devices": [
+    {
+      "id": "SD-01",
+      "name": "Fixed / hinged mesh perimeter guard",
+      "detail": "Wire-mesh guard door on operator face (site photo shows door open for access); RA cites fixed perimeter guard ~20 mm mesh, ISO 14120 / ISO 13857 principles",
+      "plr": "SF00 — prevent entry/access"
+    },
+    {
+      "id": "SD-02",
+      "name": "Operator access light curtain",
+      "detail": "Type 4 safety light curtain; vertical mount; top beam ~1400 mm, lowest ~900 mm, resolution 14 mm (RA); column/interface area visible in side photo",
+      "plr": "PLr c — SF13"
+    },
+    {
+      "id": "SD-03",
+      "name": "Two-hand cycle start (dual stations)",
+      "detail": "Two-hand actuating control for cycle start (ISO 13851 / ISO 13855). Site photo: left and right front button stations with paired red actuators.",
+      "plr": "PLr c — SFXX"
+    },
+    {
+      "id": "SD-04",
+      "name": "Emergency stop push button(s)",
+      "detail": "RA: Front Estop SF99 PLr c. Site photo: red mushroom E-Stop on control column below HMI; confirm any additional buttons on walk-down.",
+      "plr": "PLr c — SF99"
+    },
+    {
+      "id": "SD-05",
+      "name": "Power isolation switch",
+      "detail": "Red/yellow rotary main isolator lower right front (site photo); IEC 60204-1 isolation",
+      "plr": "Isolation"
+    },
+    {
+      "id": "SD-06",
+      "name": "Pneumatic air isolation + FRL",
+      "detail": "FRL/regulator assembly on front lower right (site photo); air isolation energy isolation function SF11 per RA (ISO 4414)",
+      "plr": "PLr c — SF11"
+    },
+    {
+      "id": "SD-07",
+      "name": "Safety-rated controller",
+      "detail": "Safety-rated controller (SRPCS) noted in Machine Safety Assessment machine pictures",
+      "plr": "**[PLACEHOLDER — confirm model/firmware with manufacturer documentation]**"
+    },
+    {
+      "id": "SD-08",
+      "name": "Awareness / prohibition signs",
+      "detail": "Site photos: crush/cut WARNING on mesh; automatic-motion and do-not-reach signs; lockout label at isolator",
+      "plr": "Administrative / awareness"
+    }
+  ],
+  "e_stops": [
+    {
+      "id": "ES-01",
+      "location": "Control column below HMI (red mushroom — site photo full front view)",
+      "type": "Push-button E-Stop",
+      "source": "Site photo + RA Front Estop"
+    },
+    {
+      "id": "ES-02",
+      "location": "**[PLACEHOLDER — confirm additional E-Stops on left/right stations or rear if present]**",
+      "type": "Push-button E-Stop (if fitted)",
+      "source": "Walk-down required — OA-P2G-001"
+    }
+  ],
+  "hazards": [
+    {
+      "id": "R001",
+      "source": "Tilting movement motor",
+      "consequence": "Shearing",
+      "task": "Production",
+      "risk_in": 3,
+      "risk_out": "<1",
+      "measure_advised": true
+    },
+    {
+      "id": "R002",
+      "source": "Pneumatic clamping cylinders",
+      "consequence": "Injection / crushing at clamps",
+      "task": "Production",
+      "risk_in": 3,
+      "risk_out": 3,
+      "measure_advised": true
+    },
+    {
+      "id": "R003",
+      "source": "Electrical power",
+      "consequence": "Electrocution",
+      "task": "Troubleshooting / maintenance",
+      "risk_in": 10,
+      "risk_out": "<1",
+      "measure_advised": true
+    },
+    {
+      "id": "R004",
+      "source": "Tilting movement motor",
+      "consequence": "Shearing",
+      "task": "Cleaning / maintenance",
+      "risk_in": 3,
+      "risk_out": "<1",
+      "measure_advised": true
+    },
+    {
+      "id": "R005",
+      "source": "Control panel short circuit",
+      "consequence": "Electric shock",
+      "task": "Troubleshooting",
+      "risk_in": 10,
+      "risk_out": "<1",
+      "measure_advised": true
+    },
+    {
+      "id": "R006",
+      "source": "Tilting movement motor",
+      "consequence": "Shearing",
+      "task": "Visitor / bystander",
+      "risk_in": 3,
+      "risk_out": "<1",
+      "measure_advised": false
+    },
+    {
+      "id": "R007",
+      "source": "Pneumatic clamping cylinders",
+      "consequence": "Injection",
+      "task": "Gripping jaw setup (280 model)",
+      "risk_in": 3,
+      "risk_out": 3,
+      "measure_advised": true
+    },
+    {
+      "id": "R008",
+      "source": "Pneumatic clamping cylinders",
+      "consequence": "Injection",
+      "task": "Fixture base plate changeover (230/280/310)",
+      "risk_in": 3,
+      "risk_out": "<1",
+      "measure_advised": true
+    }
+  ],
+  "ppe": ["Safety footwear", "Hand protection (gloves) as specified by manufacturer/owner"],
+  "pm_interval_note": "Preventive maintenance planned once in 15 days (per assessment task description)",
+  "open_actions": [
+    {
+      "id": "OA-P2G-001",
+      "description": "Confirm full E-Stop inventory. Photo shows ES-01 on control column below HMI; verify whether additional E-Stops exist on left/right stations, rear, or pendant.",
+      "category": "Safety Device",
+      "priority": "High",
+      "responsibility": "Manufacturer / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-002",
+      "description": "Obtain electrical schematic drawings for inclusion in Section 8 (not available in assessment package used for this sample).",
+      "category": "Documentation",
+      "priority": "High",
+      "responsibility": "Manufacturer",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-003",
+      "description": "Obtain pneumatic schematic drawings for inclusion in Section 9.",
+      "category": "Documentation",
+      "priority": "Medium",
+      "responsibility": "Manufacturer",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-004",
+      "description": "Confirm HMI/PLC model, alarm code list, and backup documentation for Section 10.",
+      "category": "Documentation",
+      "priority": "Medium",
+      "responsibility": "Manufacturer",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-005",
+      "description": "Confirm machine nameplate data: model number, serial number, asset number, manufacturing date as marked on machine.",
+      "category": "Documentation",
+      "priority": "High",
+      "responsibility": "Manufacturer / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-006",
+      "description": "Confirm pneumatic isolation device type (lockable ball valve vs other) and presence of lockout hasp as-built.",
+      "category": "LOTO",
+      "priority": "High",
+      "responsibility": "Manufacturer / End User",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-007",
+      "description": "Safety-rated controller (SRPCS) model and configuration to be documented from OEM data.",
+      "category": "Safety Device",
+      "priority": "Medium",
+      "responsibility": "Manufacturer",
+      "target_date": "TBD",
+      "status": "Open"
+    },
+    {
+      "id": "OA-P2G-008",
+      "description": "Light curtain distance to hazard zone (mm) incomplete in assessment — verify and record for safety distance validation.",
+      "category": "Safety Device",
+      "priority": "High",
+      "responsibility": "Independent Safety Consultant / Manufacturer",
+      "target_date": "TBD",
+      "status": "Open"
+    }
+  ]
+}

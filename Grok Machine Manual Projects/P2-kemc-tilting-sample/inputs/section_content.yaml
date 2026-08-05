@@ -1,0 +1,409 @@
+# KEMC Tilting Machine — section content (Grok Sample)
+# Source: Machine Safety Assessment report date 16 Feb 2026 + site photos
+# Format map: Indo-MIM V5 style sections
+
+meta:
+  document_title: "Operating & Safety Manual"
+  machine_name: "Tilting Machine"
+  revision: "V1.1"
+  date: "July 2026"
+  status: "Grok Sample / Draft"
+  note: "V1.1 photo-backed control layout enrichment"
+  prepared_by: "Certified Safety Professional"
+  tier: "B"
+
+section_1:
+  title: "1. Front Matter"
+  1_1:
+    title: "1.1 Document Scope"
+    content: |
+      This Operating & Safety Manual (OSM) provides information required for the safe installation reference, operation, maintenance, and energy isolation of the Tilting Machine manufactured by Karthick Engineering & Maintenance Consultants (KEMC).
+
+      The manual is prepared in accordance with the principles of ISO 20607:2019 (instruction handbooks for machinery), ISO 12100:2010 (risk assessment and risk reduction), IEC 82079-1:2019 (preparation of instructions for use), and IS 4571:2008, supported by the Machine Safety Assessment performed on site (report date 16 February 2026).
+
+      This document is a Grok capability-sample draft (Tier B). Items marked as placeholders or open actions must be closed before treating the manual as customer-released.
+  1_2:
+    title: "1.2 Intended Audience"
+    content: |
+      This manual is intended for:
+      • Production operators (instructed persons) who load, cycle, and unload clutch plates
+      • Maintenance and troubleshooting personnel (skilled persons)
+      • Supervisors and safety representatives
+      • Visitors and contractors who may be present near the machine (awareness only)
+
+      Untrained personnel shall not operate, adjust, or maintain this machine.
+  1_3:
+    title: "1.3 General Safety Rules"
+    content: |
+      • Read this manual and the Machine Safety Assessment before operating or servicing the machine.
+      • Only trained and authorised persons may operate the Tilting Machine.
+      • Never bypass light curtains, two-hand controls, guards, or interlocks.
+      • Apply full Lockout/Tagout (Section 4) before any intervention inside guarded zones, jaw setup, fixture changeover, or electrical/pneumatic work.
+      • Wear required PPE: safety footwear and hand protection as specified by the manufacturer or site rules.
+      • Keep hands clear of clamps, tilting mechanism, and moving parts during motion.
+      • Do not operate with guards removed or disabled.
+      • Report damaged safety devices immediately and take the machine out of service until restored.
+  1_4:
+    title: "1.4 Signal Word Hierarchy"
+    content: TABLE_SIGNAL_WORDS
+  1_5:
+    title: "1.5 Revision History"
+    content: TABLE_REVISION
+  1_6:
+    title: "1.6 Prepared By"
+    content: |
+      Prepared by: Certified Safety Professional
+
+      Role only — no individual name is used in customer-facing attribution fields of this manual.
+
+section_2:
+  title: "2. Machine Overview"
+  2_1:
+    title: "2.1 Machine Identification"
+    content: |
+      Machine name: Tilting Machine
+      Manufacturer: Karthick Engineering & Maintenance Consultants (KEMC)
+      Machine type: Assembly Machine
+      Assessment location: No 22/50, Manickavasagam Street, Kumaran Nagar, Padi, Chennai – 600050, Tamil Nadu, India
+      On-site assessment date: 16 February 2026
+
+      **[PLACEHOLDER — Model No., Serial No., Asset No., and nameplate manufacturing date to be confirmed from machine nameplate — OA-P2G-005]**
+  2_2:
+    title: "2.2 Technical Specifications"
+    content: TABLE_SPECS
+  2_3:
+    title: "2.3 Intended Use"
+    content: |
+      The tilting machine assembly is intended for safe loading, positioning, clamping, and tilting of assembled clutch plates to enable accurate and secure nut installation. It is designed to improve ergonomics, ensure consistent fastening quality, and support controlled unloading after completion of the assembly operation.
+
+      Processed workpiece: assembled clutch plate.
+      Capacity: one clutch plate per cycle.
+      Fixture / model support noted in assessment: models 230, 280, and 310 (base plate changeover).
+
+      Reasonably foreseeable misuse includes: loading beyond specified weight limits; bypassing clamping or safety interlocks; operating the tilting function while the component is unsecured; manual handling without the crane where crane use is required; and performing maintenance while the machine is energised.
+  2_4:
+    title: "2.4 Station Layout & Line Configuration"
+    content: |
+      Fixed workstation with defined loading/unloading zone. Clearance is required for tilting movement and crane operation. Access to moving and clamping areas is restricted by perimeter guarding and access detection (light curtain).
+
+      Key zones observed / documented:
+      • Load/unload area with crane assist
+      • Clamping and tilting fixture (pneumatic cylinders, jaw arrangement)
+      • Operator access face protected by light curtain and fixed mesh guards
+      • Control panel with power isolation switch and operator interface
+  2_5:
+    title: "2.5 Key Components"
+    content: |
+      • Tilting mechanism driven by motor (tilting movement)
+      • Pneumatic clamping cylinders for holding the clutch plate during tilt and nut installation
+      • Gripping jaw / fixture arrangements for model-specific setup (including 280 model jaw adjustment)
+      • Interchangeable fixture base plates for models 230, 280, 310
+      • Two-hand cycle start push buttons
+      • Front emergency stop push button
+      • Main electrical power isolation switch (rotary ON/OFF)
+      • Pneumatic air isolation
+      • Type 4 safety light curtain (operator access)
+      • Fixed perimeter mesh guards
+      • Safety-rated controller (SRPCS) — model to be confirmed (OA-P2G-007)
+      • HMI for operator information including sensor misalignment guidance during changeover (per assessment)
+      • Small crane used for load/unload assist (site handling aid; not part of machine energy isolation table unless integrated)
+  2_6:
+    title: "2.6 Maintenance Access Zones"
+    content: |
+      Maintenance and cleaning tasks include cleaning chips and oil, lubrication, and cylinder or fixture maintenance. Troubleshooting includes jam or misalignment identification, sensor/actuator checks, and manual repositioning.
+
+      Preventive maintenance is planned approximately once every 15 days per assessment task description.
+
+      Entry to the process zone for maintenance requires full energy isolation (Section 4). Do not rely on production stop alone.
+
+section_3:
+  title: "3. Hazard Identification & Risk Assessment"
+  content: |
+    Hazard identification and risk estimation for this machine were performed under a Machine Safety Assessment (report date 16 February 2026). Risks were evaluated for production, troubleshooting, cleaning/maintenance, visitor presence, gripping jaw setup, and fixture base-plate changeover.
+
+    Principal mechanical hazards include shearing from tilting movement (moving element approaching fixed parts) and injection/crushing associated with pneumatic clamping cylinders that hold the clutch plate during tilt and nut-running. Electrical hazards include electrocution from power system faults or overload during troubleshooting, and electric shock from short circuit conditions in the control panel. Risk-in values in the assessment ranged from priority levels associated with scores of 3 (mechanical) up to 10 (electrical troubleshooting scenarios).
+
+    Risk reduction measures applied or advised include inherent design considerations; fixed perimeter guarding to ISO 14120 / ISO 13857 principles; Type 4 light curtain access protection; two-hand cycle start; emergency stop; electrical power isolation; pneumatic energy isolation; and administrative measures (training, PPE, safe work procedures, operating instructions, and ISO 7010 awareness signage). Residual risks remain where protective measures depend on correct use of LOTO, PPE, and non-bypass of safety devices — notably clamping-related residual risk values remain elevated for some production and setup tasks in the assessment summary.
+
+    Personnel categories considered: Operator (instructed), Maintenance person (skilled), and Visitor (unskilled). Visitors must not enter hazard zones and must obey barriers and signage.
+
+    Full hazard identification and risk assessment is documented in the Machine Safety Assessment Report (Tilting Machine, report date 16 February 2026). This section is a summary only and does not replace that report.
+
+section_4:
+  title: "4. Lockout / Tagout (LOTO) Procedures"
+  4_1:
+    title: "4.1 Energy Isolation Points"
+    content: |
+      All hazardous energy must be isolated and verified before any person enters the guarded process zone, performs electrical work, pneumatic work, jaw setup, fixture changeover, or maintenance on clamping/tilting equipment.
+
+      Energy sources on this machine (per Machine Safety Assessment):
+      • Electrical — 230 V single-phase 50 Hz supply
+      • Pneumatic — 5 bar supply to clamping and related actuators
+      • Hydraulic — not applicable (NA)
+
+      Isolation points are listed in Table 4.1. Exact as-built hardware for pneumatic lockability must be confirmed (OA-P2G-006).
+    table: LOTO_POINTS
+  4_2:
+    title: "4.2 LOTO Equipment Required"
+    content: |
+      • Padlocks — personal locks, one key per authorised person
+      • Lockout hasps for multi-person lockout
+      • Tags stating name, date, reason for isolation
+      • Voltage tester / proving unit (qualified electrical personnel)
+      • Pneumatic lockout device / blanking as applicable to the installed air isolation hardware
+      • PPE as required by task risk assessment
+  4_3:
+    title: "4.3 De-energization Sequence (Tag-Out)"
+    content: FLOWCHART_TAGOUT
+  4_4:
+    title: "4.4 Re-energization Sequence (Tag-In)"
+    content: FLOWCHART_TAGIN
+  4_5:
+    title: "4.5 Partial Isolation"
+    content: |
+      Where only one energy type is involved in a limited task, partial isolation may be considered only if a documented task risk assessment confirms residual energy cannot cause injury. Default practice for this machine: isolate both electrical and pneumatic energy for any work inside the process/guarded zone, jaw setup, or fixture changeover.
+
+      Grip jaw setup (280 model) and fixture base plate changeover (230 / 280 / 310) require LOTO and administrative controls per the Machine Safety Assessment.
+
+section_5:
+  title: "5. Emergency Stop Function"
+  5_1:
+    title: "5.1 E-Stop Device Locations"
+    content: |
+      The Machine Safety Assessment identifies a front emergency stop push button (Front Estop) assigned as an emergency stop safety function (SF99), with performance level required PLr c as stated for related devices.
+
+      **[PLACEHOLDER — Complete E-Stop count and map of all push buttons around the machine — OA-P2G-001]**
+
+      Operators must know the location of every E-Stop before starting production. Keep E-Stop devices unobstructed.
+  5_2:
+    title: "5.2 Stop Category"
+    content: |
+      Emergency stop is implemented according to ISO 13850 and IEC 60204-1 principles as referenced in the Machine Safety Assessment. Exact stop category (0 / 1) for each actuator group shall be confirmed from manufacturer electrical documentation.
+
+      **[PLACEHOLDER — Confirm Category 0 vs Category 1 stop behaviour for tilt motor and pneumatic dump — manufacturer electrical design]**
+  5_3:
+    title: "5.3 E-Stop Activation Sequence"
+    content: FLOWCHART_ESTOP_ACTIVATE
+  5_4:
+    title: "5.4 E-Stop Reset Procedure"
+    content: FLOWCHART_ESTOP_RESET
+  5_5:
+    title: "5.5 What the E-Stop Does NOT Do"
+    content: |
+      • E-Stop is not a substitute for Lockout/Tagout.
+      • E-Stop does not replace proper isolation for maintenance.
+      • E-Stop may not remove all residual pneumatic pressure until air isolation and venting are performed.
+      • E-Stop is not for routine cycle stop during normal production (use normal stop / cycle controls).
+  5_6:
+    title: "5.6 Periodic E-Stop Testing"
+    content: |
+      Test each E-Stop device at a frequency defined by site safety rules. Recommended minimum for this sample:
+      • Start of shift / daily: activate each known E-Stop; verify machine enters safe state; reset only when area clear; confirm normal operation can resume.
+      • After any control modification or incident: full functional test before production release.
+
+      Record tests in the maintenance log (Appendix A).
+
+section_6:
+  title: "6. Operating Instructions"
+  6_1:
+    title: "6.1 Operating Modes"
+    content: |
+      Operating modes documented in the Machine Safety Assessment: Manual and Automatic.
+
+      • Manual: operator-controlled steps for setup, teaching of positions, or supervised intervention as designed.
+      • Automatic: production cycle after valid start conditions (guards intact, light curtain clear, two-hand start, no active E-Stop).
+
+      **[PLACEHOLDER — Exact HMI mode selection path and interlocks per mode — manufacturer HMI documentation]**
+  6_2:
+    title: "6.2 Pre-Start Checklist"
+    content: |
+      Before starting production:
+      1. Guards and mesh panels fitted and secure.
+      2. Light curtain clean, aligned, and not muted improperly.
+      3. E-Stop(s) released and functional.
+      4. Main electrical isolator ON only when ready; no lockout tags remaining without investigation.
+      5. Pneumatic supply at approximately 5 bar; no audible major leaks.
+      6. Correct fixture base plate for model (230 / 280 / 310).
+      7. Area clear of tools, loose parts, and unauthorised persons.
+      8. PPE worn (safety shoes; gloves as task requires).
+      9. Crane and load path clear for clutch plate handling.
+      10. No active alarms that prohibit start (see Section 10).
+  6_3:
+    title: "6.3 Machine Startup Procedure"
+    content: FLOWCHART_STARTUP
+  6_4:
+    title: "6.4 Normal Operating Cycle"
+    content: FLOWCHART_CYCLE
+  6_5:
+    title: "6.5 Process Description"
+    content: |
+      Production task (per assessment): Operator loads the clutch plate using a small crane, places the clutch plate in the machine, and starts the process using cycle start — two-hand push buttons. The machine clamps the part, tilts to a comfortable angle, the operator tightens nuts (nut runner), the machine returns, clamps release, and the part is unloaded.
+
+      WARNING: Moving parts can crush and cut. Keep hands clear. Do not operate with guard removed.
+  6_6:
+    title: "6.6 Normal Shutdown"
+    content: FLOWCHART_SHUTDOWN
+  6_7:
+    title: "6.7 Emergency Shutdown"
+    content: FLOWCHART_EMERGENCY_SHUTDOWN
+
+section_7:
+  title: "7. Maintenance & Care"
+  7_1:
+    title: "7.1 Weekly Maintenance"
+    content: |
+      • Inspect fixed guards and mesh for damage or missing fasteners.
+      • Check light curtain lenses and brackets for damage, dust, or misalignment.
+      • Function-test E-Stop and verify two-hand control requires both buttons.
+      • Inspect pneumatic hoses, fittings, and clamping cylinders for leaks or damage.
+      • Verify warning signs remain legible (moving parts / lockout signage observed on site).
+      • Clean chips, oil, and debris from work area without defeating guards.
+  7_2:
+    title: "7.2 Monthly Maintenance"
+    content: |
+      • Detailed inspection of tilting mechanism fasteners and stops.
+      • Check clamp jaw wear and fixture base plate condition for all active models.
+      • Verify isolator switch operation and label integrity.
+      • Review open actions and any temporary bypasses (bypasses prohibited for production).
+  7_3:
+    title: "7.3 Periodic / Six-Monthly Maintenance"
+    content: |
+      Assessment references preventive maintenance planned once in 15 days for troubleshooting/PM scope covering sensors, actuators, and related items. Align site PM schedule with manufacturer recommendations when available.
+
+      • Comprehensive electrical panel inspection by qualified personnel (isolation required).
+      • Pneumatic system service and filter/regulator check.
+      • Re-validate safety functions after any change (light curtain distance, two-hand timing, E-Stop).
+
+      **[PLACEHOLDER — OEM spare parts list and lubrication schedule — manufacturer documentation]**
+  7_4:
+    title: "7.4 Consumables & Spare Parts"
+    content: |
+      **[PLACEHOLDER — Consumables and critical spares list (seals, sensors, light curtain, E-Stop, valves) — manufacturer BOM]**
+
+section_8:
+  title: "8. Electrical Schematic"
+  8_1:
+    title: "8.1 Key Electrical Parameters"
+    content: |
+      Supply (Machine Safety Assessment): 230 V, single phase, 50 Hz.
+      Power isolation: ON/OFF isolation switch on machine (observed rotary isolator with lockout warning label on site).
+
+      **[PLACEHOLDER — Full load current, short-circuit rating, control voltage, cable sizes — electrical design package — OA-P2G-002]**
+  8_2:
+    title: "8.2 Electrical Schematic Drawings"
+    content: |
+      **[PLACEHOLDER — Electrical schematic drawings not provided in the assessment package used for this Grok sample — attach manufacturer drawings and revise Section 8 — OA-P2G-002]**
+
+section_9:
+  title: "9. Pneumatic Schematic"
+  9_1:
+    title: "9.1 Key Pneumatic Parameters"
+    content: |
+      Supply pressure (Machine Safety Assessment): 5 bar.
+      Primary actuators: pneumatic clamping cylinders holding the clutch plate during tilt and nut installation.
+      Isolation: pneumatic energy isolation device (SF11) per assessment.
+  9_2:
+    title: "9.2 Pneumatic Schematic Drawings"
+    content: |
+      **[PLACEHOLDER — Pneumatic schematic drawings not provided in source package — OA-P2G-003]**
+
+section_10:
+  title: "10. HMI / Alarms & Fault Codes"
+  10_1:
+    title: "10.1 Alarm Priority Levels"
+    content: |
+      The assessment references an HMI that provides operator information during gripping jaw setup (including sensor misalignment guidance). Full alarm taxonomy was not included in the source package.
+    table: ALARM_PRIORITY
+  10_2:
+    title: "10.2 Alarm / Fault Code List"
+    content: |
+      **[PLACEHOLDER — Complete HMI/PLC alarm code register — manufacturer software documentation — OA-P2G-004]**
+  10_3:
+    title: "10.3 General Alarm Response Procedure"
+    content: FLOWCHART_ALARM
+
+section_11:
+  title: "11. Safety Features & Interlocks"
+  11_1:
+    title: "11.1 Safety Architecture"
+    content: |
+      Safety measures combine fixed guarding, electro-sensitive protective equipment (light curtain), two-hand control for cycle start, emergency stop, electrical isolation, and pneumatic isolation, supported by administrative controls (training, PPE, procedures, signage).
+  11_2:
+    title: "11.2 Safety Control System"
+    content: |
+      A safety-rated controller (SRPCS) is identified in the Machine Safety Assessment machine documentation imagery. Exact product model, I/O map, and validated safety functions shall be confirmed from manufacturer documentation (OA-P2G-007).
+  11_3:
+    title: "11.3 Safety Device Inventory"
+    content: TABLE_SAFETY_DEVICES
+  11_4:
+    title: "11.4 Safety Interlock Logic (Overview)"
+    content: FLOWCHART_SAFETY_LOGIC
+  11_5:
+    title: "11.5 Safety Function Testing Requirements"
+    content: |
+      • Daily/shift: E-Stop, visual guard check, light curtain obstruction test if site procedure requires.
+      • After maintenance affecting safety: re-test affected functions before production.
+      • Record results in Appendix A maintenance log.
+  11_6:
+    title: "11.6 Prohibited Actions"
+    content: |
+      • Muting, bypassing, or defeating light curtains, two-hand controls, E-Stops, or guards.
+      • Reaching into the process zone during automatic motion.
+      • Operating with missing or open fixed guards.
+      • Maintenance without LOTO.
+      • Allowing untrained visitors inside barriers.
+
+section_12:
+  title: "12. Compliance & Certifications"
+  12_1:
+    title: "12.1 International Safety Standards"
+    content: |
+      This manual and the associated risk assessment approach reference the following standards framework:
+      • ISO 12100:2010 — Safety of machinery — General principles for design — Risk assessment and risk reduction
+      • ISO 20607:2019 — Safety of machinery — Instruction handbooks — General drafting principles
+      • IEC 82079-1:2019 — Preparation of instructions for use
+      • ISO 13850 — Emergency stop function
+      • ISO 13849-1 — Safety-related parts of control systems (performance level concepts as used in assessment)
+      • ISO 13851 / ISO 13855 — Two-hand control and positioning of safeguards (as referenced for cycle start / light curtain)
+      • ISO 14120 / ISO 13857 — Guards and safety distances (as referenced for fixed guard)
+      • ISO 4414 — Pneumatic fluid power (as referenced for air isolation)
+      • IEC 60204-1 — Electrical equipment of machines (as referenced)
+      • ANSI B11.19 — performance criteria for safeguarding (as referenced for awareness signs in assessment)
+  12_2:
+    title: "12.2 Indian Standards & Regulations"
+    content: |
+      • IS 4571:2008 — related machinery safety documentation practice as applied by the manual authoring framework
+      • Factories Act, 1948 and applicable State Factory Rules — employer duties for safe working systems, training, and guarding
+  12_3:
+    title: "12.3 Component-Level Standards"
+    content: |
+      Component conformity (light curtain Type 4, safety controller, etc.) shall be verified against manufacturer declarations. This sample does not restate unconfirmed certificates.
+  12_4:
+    title: "12.4 Compliance Statement"
+    content: |
+      LIABILITY DISCLAIMER
+
+      This Operating & Safety Manual has been prepared by a Certified Safety Professional in accordance with ISO 12100:2010, ISO 20607:2019, IEC 82079-1:2019, and IS 4571:2008, based on the Machine Safety Assessment and technical information available for this Grok sample draft.
+
+      Where original technical data was unavailable, items are marked as placeholders or logged as Open Actions. The customer and manufacturer are responsible for final review and verification before the machine is placed into service or this manual is released as controlled issue.
+
+      Neither the consulting practice nor the author assumes liability for injuries or damages resulting from: non-compliance with this manual; failure to maintain per the schedule; operation by untrained personnel; or use of superseded draft sample content without formal release.
+  12_5:
+    title: "12.5 Document Control"
+    content: |
+      Document title: Operating & Safety Manual — Tilting Machine
+      Document status: Grok Sample / Draft
+      Revision: V1.0
+      Date: July 2026
+      Open Actions: maintained in standalone register KEMC_TiltingMachine_OpenActions_GrokSample_V1.0.xlsx
+  12_6:
+    title: "12.6 Customer Sign-Off"
+    content: SIGNOFF_BLOCKS
+
+appendix_a:
+  title: "Appendix A — Maintenance Log Template"
+  content: TABLE_MAINT_LOG
+
+appendix_b:
+  title: "Appendix B — LOTO Log Template"
+  content: TABLE_LOTO_LOG
